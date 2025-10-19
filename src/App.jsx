@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { Play, Pause, RotateCcw } from 'lucide-react';
-import './App.css';
+
 
 const GRID_SIZE = 20;
 const CELL_SIZE = 20;
