@@ -1,70 +1,16 @@
-# My React Vite App
+# React + Vite
 
-This is a React application built using Vite as the build tool. It serves as a template for creating modern web applications with a fast development experience.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Getting Started
+Currently, two official plugins are available:
 
-To get started with this project, follow the instructions below.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-### Prerequisites
+## React Compiler
 
-Make sure you have the following installed on your machine:
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-- Node.js (version 12 or higher)
-- npm (comes with Node.js)
+## Expanding the ESLint configuration
 
-### Installation
-
-1. Clone the repository:
-
-   ```
-   git clone <repository-url>
-   ```
-
-2. Navigate to the project directory:
-
-   ```
-   cd my-react-vite-app
-   ```
-
-3. Install the dependencies:
-
-   ```
-   npm install
-   ```
-
-### Running the Application
-
-To start the development server, run:
-
-```
-npm run dev
-```
-
-This will start the application and you can view it in your browser at `http://localhost:3000`.
-
-### Building for Production
-
-To create a production build of the application, run:
-
-```
-npm run build
-```
-
-This will generate the optimized files in the `dist` directory.
-
-### Folder Structure
-
-- `src/`: Contains the source code for the application.
-  - `components/`: Contains reusable components like Header and Footer.
-  - `pages/`: Contains the different pages of the application.
-  - `hooks/`: Contains custom hooks for managing state and side effects.
-  - `utils/`: Contains utility functions for API calls.
-- `public/`: Contains static files like `robots.txt`.
-- `index.html`: The main HTML file that serves as the entry point for the application.
-- `vite.config.js`: Configuration file for Vite.
-- `package.json`: Contains project metadata and dependencies.
-
-### License
-
-This project is licensed under the MIT License.
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
