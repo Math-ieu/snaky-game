@@ -77,8 +77,8 @@ export default function App() {
       setFoodEaten(newFoodEaten);
       setScore(prev => prev + (10 * level));
       
-      // Augmenter le niveau tous les 100 aliments mangés
-      if (newFoodEaten % 100 === 0) {
+      // Augmenter le niveau tous les 10 aliments mangés
+      if (newFoodEaten % 10 === 0) {
         setLevel(prev => prev + 1);
         setSpeed(prev => Math.max(50, prev - 20));
       }
